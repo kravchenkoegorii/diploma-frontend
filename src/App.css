@@ -1,0 +1,54 @@
+/* #region Privy login modal */
+/* [aria-label="log in or sign up"] > #privy-dialog-backdrop {
+	backdrop-filter: none !important;
+}
+
+[aria-label="log in or sign up"] > div:nth-child(2) {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+[aria-label="log in or sign up"] > div:nth-child(2) > div:nth-child(1) {
+	grid-column: 2;
+} */
+/* #endregion */
+
+.mask-header {
+  mask: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, #000000 100%);
+}
+
+.body-bg-black {
+  background-color: #171717;
+}
+
+/* to hide redundant katex elements on page which breaks the ui */
+.katex-mathml {
+  display: none;
+}
+
+.katex-html {
+  display: inline-block;
+  margin-left: 25px;
+  margin-bottom: 4px;
+  margin-right: 5px;
+  background-color: #6666665b;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: PP Radio Grotesk,
+  sans-serif;
+}
+
+.landing-ellipse {
+  background: linear-gradient(to bottom, #ff9900 1%, #664686 10%, #171717 30%);
+  clip-path: ellipse(40% 70% at 50% 30%);
+}
+
+.ellipse-container {
+  border-radius: 100%;
+}
+
+.ellipse {
+  position: absolute;
+  clip-path: ellipse(50% 50% at 50% 50%);
+}

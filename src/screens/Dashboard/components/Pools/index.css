@@ -1,0 +1,133 @@
+.poolsTable .MuiTableContainer-root {
+  max-height: 482px;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none;
+}
+
+.poolsTable .MuiTableCell-root {
+  border-bottom: none;
+  font-family: "PP Radio Grotesk";
+}
+
+.poolsTable .MuiTableRow-root {
+  position: relative;
+  min-height: 50px;
+}
+
+.poolsTable .MuiTableBody-root .MuiTableCell-root {
+  position: relative;
+}
+
+.poolsTable .MuiTableBody-root .MuiTableCell-root:first-child::before {
+  border-bottom-left-radius: 16px;
+  border-top-left-radius: 16px;
+}
+
+.poolsTable .MuiTableBody-root .MuiTableCell-root:last-child::before {
+  border-bottom-right-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.poolsTable .MuiTableCell-root::before {
+  background-color: #FFFFFF08;
+}
+
+.poolsTable .active::before {
+  inset: 3px 0;
+  border-radius: 16px 16px 0 0;
+}
+
+.poolContent {
+  border-top: 0.5px solid #ffffff0f;
+}
+
+.poolsTable .MuiTableCell-head {
+  padding: 0px 16px;
+  font-size: 10px;
+  color: #dbdbfe;
+  background-color: transparent;
+}
+
+.poolsTable .MuiTableCell-body {
+  color: #fff;
+  margin-bottom: 0;
+  padding: 7px 16px;
+}
+
+.poolContent {
+  border-top: 0.5px solid #ffffff0f;
+}
+
+.poolDetailsTable td {
+  border: none;
+}
+
+.poolContent:last-child .poolsTable tr:last-child {
+  border-radius: 23px;
+}
+
+.poolContent:last-child .poolsTable tr:last-child td:first-child {
+  border-radius: 0 0 0 23px;
+}
+
+.poolContent:last-child .poolsTable tr:last-child td:last-child {
+  border-radius: 0 0 23px 0;
+}
+
+.mobilePosition:last-child {
+  border: none;
+}
+
+.details {
+  position: relative;
+  top: -6px;
+}
+
+.poolItem td {
+  position: relative;
+  z-index: 2;
+}
+
+.poolItem td::before {
+  position: absolute;
+  inset: 0;
+  content: '';
+  background-color: #FFFFFF08;
+  z-index: -1;
+}
+
+.active td:first-child:before {
+  border-bottom-left-radius: 0 !important;
+}
+
+.active td:last-child:before {
+  border-bottom-right-radius: 0 !important;
+}
+
+.lockItem td {
+  position: relative;
+}
+
+.lockItem td::before {
+  position: absolute;
+  inset: 0;
+  content: '';
+  background-color: #FFFFFF08;
+}
+
+.votingItem td {
+  position: relative;
+}
+
+.votingItem td::before {
+  position: absolute;
+  inset: 0;
+  content: '';
+  background-color: #FFFFFF08;
+}
+
+@media (max-width: 992px) {
+  .poolItem {
+    display: none !important;
+  }
+}

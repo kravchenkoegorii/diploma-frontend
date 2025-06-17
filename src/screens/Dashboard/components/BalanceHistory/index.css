@@ -1,0 +1,23 @@
+.apexcharts-tooltip {
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.apexcharts-xaxistooltip {
+  margin-top: 5px;
+  background: #FFFFFF0F !important;
+  color: #C9C9E2 !important;
+  font-size: 10px !important;
+  border-radius: 7px !important;
+  padding: 3px 6px !important;
+  backdrop-filter: blur(20px);
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.apexcharts-xaxistooltip:before,
+.apexcharts-xaxistooltip:after {
+  display: none !important;
+}
+

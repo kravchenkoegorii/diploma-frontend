@@ -1,0 +1,118 @@
+.text-dashboard-title {
+  max-width: max-content;
+  -webkit-text-fill-color: #0000;
+  background: linear-gradient(90deg, #FFFFFF 20.72%, #D5D5F1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+.dashboardTable .MuiTableContainer-root {
+  font-family: 'PP Radio Grotesk';
+  max-height: 340px;
+}
+
+.dashboardTable .MuiTableBody-root .MuiTableRow-root {
+  background-color: #FFFFFF03;
+  border-radius: 23px;
+  color: #0000006b;
+}
+
+.dashboardTable .MuiTable-root {
+  border-collapse: separate;
+  border-spacing: 0 6px;
+}
+
+.dashboardTable .MuiTableCell-root {
+  font-family: 'PP Radio Grotesk';
+
+}
+
+.dashboardTable .MuiTableCell-head {
+  color: #fff;
+  padding: 0;
+  border: none;
+}
+
+.dashboardTable .MuiTableCell-body {
+  color: #fff;
+  width: 180px !important;
+  padding: 0 36px 0 0;
+  border: none;
+}
+
+.dashboardTable .MuiTableCell-body:first-child {
+  color: #fff;
+  width: 180px !important;
+  padding: 0 36px 0 16px;
+  border: none;
+}
+
+.dashboardTable .MuiTableCell-body:first-child {
+  width: 30px !important;
+}
+
+.dashboardTable .MuiTableBody-root .MuiTableRow-root .MuiTableCell-body:first-child {
+  border-top-left-radius: 23px;
+  border-bottom-left-radius: 23px;
+}
+
+.dashboardTable .MuiTableBody-root .MuiTableRow-root .MuiTableCell-body:last-child {
+  border-bottom-right-radius: 23px;
+  border-top-right-radius: 23px;
+}
+
+.thin-scrollbar::-webkit-scrollbar {
+  position: relative;
+  width: 3px;
+}
+
+.thin-scrollbar::-webkit-scrollbar-track {
+  width: 1px;
+  margin-bottom: 16px;
+}
+
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 3px;
+  width: 3px;
+  z-index: 2;
+}
+
+.thin-scrollbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 10.5px;
+  bottom: 16px;
+  z-index: 1;
+  width: 1px;
+  height: 80%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(-50%);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  position: relative;
+  width: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  width: 1px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #ffffff14;
+  border-radius: 3px;
+  width: 3px;
+  z-index: 2;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #ffffff1a;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:active {
+  background-color: #ffffff3a;
+}

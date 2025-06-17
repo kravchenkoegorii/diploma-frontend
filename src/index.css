@@ -1,0 +1,365 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: touch
+}
+
+html::-webkit-scrollbar {
+  -webkit-appearance: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+@keyframes scanAnimation {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+.scanner-line {
+  animation: scanAnimation 2s linear infinite alternate;
+}
+
+.roomName {
+  -webkit-mask-image: linear-gradient(to right, black calc(100% - 100px), transparent 100%);
+  mask-image: linear-gradient(to right, black calc(100% - 100px), transparent 100%);
+}
+
+.chat-body {
+  background: url('./assets/images/chatBg.jpg');
+  background-size: cover;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media (max-width: 1200px) {
+  .chat-body {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.sidebar-twitter path {
+  fill: #C9C9E2;
+}
+
+.pools-tab {
+  box-sizing: border-box;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.pools-tab[aria-selected='true'] {
+  border-color: white;
+}
+
+body {
+  --privy-color-background: #171717;
+  --privy-color-background-2: transparent;
+  --privy-color-foreground-accent: #171717;
+  --privy-color-accent-light: #ffffff1a;
+  --privy-color-accent: #ffec3c;
+  --privy-color-accent-dark: #ffec3c;
+  --privy-color-accent-darkest: #ffeb3c32;
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mobileDashboard > button[data-state='open'] {
+  border-bottom: none;
+}
+
+#privy-modal-content {
+  [aria-label='close modal'] {
+    border-width: 0.5px;
+    border-color: var(--privy-color-accent-light);
+  }
+
+  div:has(> img[alt='Crypto App Dev logo']) {
+    padding-top: 45px;
+  }
+
+  button:focus {
+    border-color: transparent !important;
+    box-shadow: none !important;
+  }
+}
+
+#privy-modal-content > button {
+  background-color: transparent !important;
+  border: .5px solid gray;
+}
+
+#privy-modal-content > button:hover {
+  background-color: #383838 !important;
+}
+
+#email-input {
+  caret-color: #fff;
+}
+
+#email-input:-webkit-autofill {
+  -webkit-text-fill-color: #fff !important;
+  caret-color: #fff;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+#email-input:-moz-autofill {
+  color: #fff !important;
+  caret-color: #fff;
+}
+
+.chat-scroll > div {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+.chat-scroll > div::-webkit-scrollbar {
+  display: none !important;
+}
+
+.chat-scroll > button {
+  display: none !important;
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+}
+
+.chat-scroll > button:hover {
+  transition: all ease-in-out 0.3s;
+}
+
+.chat-scroll > button::after {
+  content: '↓';
+}
+
+.input-scroll {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+.input-scroll::-webkit-scrollbar {
+  display: none !important;
+}
+
+.input-number::-webkit-outer-spin-button,
+.input-number::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.input-number[type=number] {
+  -moz-appearance: textfield;
+  /* Firefox */
+}
+
+.scrollbar-hidden {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none !important;
+}
+
+@media (max-width: 992px) {
+  .topBackground {
+    background: url('../src/assets/images/mobileBackground.webp') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .swiper-slide {
+    display: flex !important;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .blog-swiper {
+    align-items: center;
+    max-height: 1100px;
+  }
+
+  .blog-slide {
+    width: 100vw;
+  }
+}
+
+.swiper-top .swiper-pagination-progressbar {
+  width: 100% !important;
+  height: 2px !important;
+  border-radius: 2px;
+  background-color: #ffe7c3 !important;
+}
+
+.swiper-top .swiper-pagination-progressbar-fill {
+  height: 4px !important;
+  border-radius: 1px;
+  background-color: #fff !important;
+}
+
+.scroll-container {
+  position: sticky;
+  left: 0;
+  right: 0;
+  will-change: transform;
+}
+
+.scroll-container .ghost {
+  width: 100vw;
+}
+
+.quote_wrapper,
+.cases_wrapper {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.quote_wrapper::-webkit-scrollbar,
+.cases_wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.MuiAccordion-root {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.lending-faq .MuiAccordion-root {
+  border-bottom: 1px solid #1717171a;
+}
+
+.MuiAccordion-root::before {
+  display: none;
+}
+
+.lending-faq .MuiAccordion-root:last-of-type {
+  border-radius: 0 !important;
+}
+
+.Mui-expanded {
+  transform: rotate(0) !important;
+}
+
+.MuiAccordionSummary-content {
+  margin: 20px 0 !important;
+}
+
+.MuiAccordionDetails-root {
+  padding: 0 16px 8px 16px !important;
+}
+
+.MuiButtonBase-root {
+  padding: 0 !important;
+}
+
+.MuiDrawer-paper {
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+.MuiBackdrop-root {
+  background: transparent !important;
+}
+
+.rfm-child {
+  margin-right: 1rem;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+button[data-state='open'] {
+  border-bottom: 1px solid #313132;
+}
+
+.content[data-state='open'] {
+  padding-bottom: 16px;
+}
+
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.4) !important;
+  opacity: 1 !important;
+  width: 6px !important;
+  height: 6px !important;
+  border-radius: 9999px;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  background: white !important;
+}
+
+.grid-cols-fill {
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+}
+
+@media screen and (min-width: 640px) {
+  .grid-cols-fill {
+    grid-template-columns: repeat(auto-fill, minmax(17.625rem, 1fr));
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-5px);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+
+  75% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-shake {
+  animation: shake 0.3s ease-in-out;
+}

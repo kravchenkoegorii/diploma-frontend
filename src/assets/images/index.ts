@@ -1,0 +1,13 @@
+export { default as topBackground } from './topBackground_1400x846.webp';
+export { default as logo } from './logo.png';
+export { default as noise } from './noise.png';
+export { default as aerodromeImage } from './aerodromeImg.webp';
+export { default as blogMortem } from './blog-mortem.png';
+export { default as tokenomics } from './tokenomics.png';
+export { default as agent } from './agent.png';
+export { default as aiAvatar } from './aiAvatar.png';
+export { default as verificationPost } from './verificationPost.jpg';
+export { default as danger } from './danger.png';
+export { default as gradientBg } from './gradientBg_64x74.png';
+export { default as optimismIcon } from './chainIcons/optimism.png';
+export { default as baseIcon } from './chainIcons/baseIcon.png';

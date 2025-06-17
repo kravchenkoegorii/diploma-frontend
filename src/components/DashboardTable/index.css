@@ -1,0 +1,10 @@
+.dashboard-table {
+  border-spacing: 0 6px !important;
+  border-collapse: separate !important;
+}
+
+.dashboard-table thead {
+  background-color: rgba(110, 111, 112, 0.004);
+  backdrop-filter: blur(5px);
+}
+
