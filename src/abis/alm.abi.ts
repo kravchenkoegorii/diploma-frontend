@@ -1,5 +1,3 @@
-'use strict';
-
 export const almAbi = [
   {
     inputs: [{ internalType: 'address', name: 'core_', type: 'address' }],

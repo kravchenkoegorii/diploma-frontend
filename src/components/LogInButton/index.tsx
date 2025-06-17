@@ -1,5 +1,3 @@
-'use strict';
-
 import { AccountIcon } from '@/assets/icons/AccountIcon';
 
 export const LogInButton = ({ ...props }) => {

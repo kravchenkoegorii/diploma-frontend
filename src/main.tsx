@@ -2,9 +2,9 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App.tsx';
-import { Providers } from './providers/index.tsx';
+import { Providers } from '@/providers';
 import { BrowserRouter, HashRouter } from 'react-router-dom';
-import { STAGE, STAGES } from './constants/index.ts';
+import { STAGE, STAGES } from '@/constants';
 import VConsole from 'vconsole';
 
 if (import.meta.env.VITE_STAGE === 'development') {

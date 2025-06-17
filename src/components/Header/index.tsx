@@ -14,7 +14,7 @@ import { motion, useWillChange } from 'framer-motion';
 import { useLenis } from 'lenis/react';
 import { BlogBlackArrow } from '../../assets/icons/BlogBlackArrow';
 import { Link } from 'react-router-dom';
-import { ROUTES } from '../../constants/routes';
+import { ROUTES } from '@/constants/routes.ts';
 
 interface IHeaderProps {
   handleScroll: (e: MouseEvent, targetId: string) => void;

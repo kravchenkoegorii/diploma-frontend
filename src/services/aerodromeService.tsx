@@ -48,7 +48,7 @@ import {
   writeContract,
 } from 'wagmi/actions';
 import { $api } from '.';
-import { sugarAbi } from '../abi';
+import { sugarAbi } from '../abis/sugar.abi.ts';
 import { factoryRegistryAbi } from '../abis/factoryRegistryAbi.abi';
 import { rewardsSugarAbi } from '../abis/rewardsSugar.abi';
 import { veSugarAbi } from '../abis/veSugar.abi';
@@ -431,9 +431,7 @@ export class AerodromeService {
       }
     }
 
-    const allPositions = [...factoryResults, ...unstakedResults];
-
-    return allPositions;
+    return [...factoryResults, ...unstakedResults];
   }
 
   async getLocksForChains(address?: Address, chainIds?: TChainId[]) {
@@ -2146,8 +2144,7 @@ export class AerodromeService {
   ): Promise<ReturnType<typeof getTransactionReceipt>> {
     for (let attempt = 0; attempt <= maxRetries; attempt++) {
       try {
-        const receipt = await getTransactionReceipt(client, { hash });
-        return receipt;
+        return await getTransactionReceipt(client, { hash });
       } catch (err) {
         if (attempt === maxRetries) {
           throw err;
@@ -2260,7 +2257,7 @@ export class AerodromeService {
     try {
       for (const call of calls) {
         try {
-          if (call.success === false) {
+          if (!call.success) {
             throw new Error('Transaction failed');
           }
           const tx = await method(call);

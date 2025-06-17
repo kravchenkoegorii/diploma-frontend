@@ -25,7 +25,7 @@ class PriceService {
     usdc: 'usd-coin',
   };
   private _tockens = Object.values(this._supported_tokens).join(',');
-  private _timeout = minute * 1;
+  private _timeout = minute;
 
   async fetchPrice() {
     if (this._loading) {

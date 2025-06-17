@@ -1,4 +1,3 @@
-'use strict';
 import { Address } from 'viem';
 import { EActionType } from './chat';
 import { TChainId } from './chain';

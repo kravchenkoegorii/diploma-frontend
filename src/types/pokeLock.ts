@@ -1,5 +1,3 @@
-'use strict';
-
 import { Address } from 'viem';
 import { TChainId } from './chain';
 

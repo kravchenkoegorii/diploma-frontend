@@ -1,5 +1,3 @@
-'use strict';
-
 export const ammPoolContractAbi = [
   { inputs: [], stateMutability: 'nonpayable', type: 'constructor' },
   { inputs: [], name: 'BelowMinimumK', type: 'error' },

@@ -5,7 +5,7 @@ import {
 } from '@privy-io/react-auth';
 import { useEffect, useState } from 'react';
 import { useCopyToClipboard } from 'usehooks-ts';
-import { userService } from '../../services/userService';
+import { userService } from '@/services/userService.ts';
 
 export const AuthTokensScreen = () => {
   const [privyToken, setPrivyToken] = useState<string | undefined>();

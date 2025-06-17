@@ -108,14 +108,12 @@ export const SendTransactionModal: FC<ISendTransactionModalProps> = ({
         if (!user.wallet) {
           throw new Error('User wallet is undefined');
         }
-        const txHash = await writeContractAsync({
+        hash = await writeContractAsync({
           abi: erc20Abi,
           address: selectedToken.address as Address,
           functionName: 'transfer',
           args: [address, parseUnits(amount, selectedToken.decimals)],
         });
-
-        hash = txHash;
       }
 
       await waitForTransactionReceipt(wagmiConfig, {

@@ -1,5 +1,3 @@
-'use strict';
-
 export const swapperDevAbi = [
   { inputs: [], stateMutability: 'nonpayable', type: 'constructor' },
   {

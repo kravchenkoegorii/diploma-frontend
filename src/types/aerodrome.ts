@@ -1,5 +1,5 @@
 import { Address, ReadContractReturnType, TransactionReceipt } from 'viem';
-import { sugarAbi } from '../abi';
+import { sugarAbi } from '../abis/sugar.abi.ts';
 import { veSugarAbi } from '../abis/veSugar.abi';
 import { rewardsSugarAbi } from '../abis/rewardsSugar.abi';
 import { TChainId } from './chain';

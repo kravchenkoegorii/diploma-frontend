@@ -1,5 +1,3 @@
-'use strict';
-
 export const formatAddress = (
   address: string,
   startChars = 5,

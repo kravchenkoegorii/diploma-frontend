@@ -1,5 +1,3 @@
-'use strict';
-
 import { STAGE, STAGES } from '.';
 
 export const chatRoutes = ['chat.reflect.now'];
